@@ -2,8 +2,8 @@ describe('Покупка аватара', function() {
 
 it('Входим и покупаем', function () {
 	cy.visit('https://pokemonbattle.ru/login'); 
-	cy.get('#root > div > main > section > div.login__content > form > div:nth-child(1) > input').type('ksusha081097@mail.ru');
-	cy.get('#password').type('Ujcgjlbpf,skfgfhjkm2jqhfp');
+	cy.get('#root > div > main > section > div.login__content > form > div:nth-child(1) > input').type('user_login');
+	cy.get('#password').type('user_pass');
 
 	cy.get('.auth__button').click(); // нажала на кнопку войти
 
